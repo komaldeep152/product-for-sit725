@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#F5F5F5;
+}
+.container{
+    position: relative;
+    margin-top: 100px;
+    width: 1200px;
+    height: auto;
+    border-radius: 5px;
+    background: #F0F0F0;
+}
+
+#label{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2F303A;
+}
+
+.login_form.font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    color: #2F303A;
+    margin: 5px 0;
+    font-size: xx-large;  
+}
+.login_form input{
+     font-size: 25px;
+     height: 40px;
+     width: 350px;
+     padding: 0 5px;
+     outline: none;
+     border: 1px solid rgb(61, 58, 58); 
+}
+
+button{
+    width: 150px;
+    height: 100px;
+    padding: 50px
+}
+
+.login_form #username_error,
+.login_form #pass_error{
+ margin-top: 5px;
+ width: 345px;
+ font-size: 18px;
+ color: #e11414;
+ text-align: center;
+ padding: 5px 8px;
+ border-radius: 3px;
+ border: 1px solid #ef9a9a;
+ background: rgba(255,0,0,0.1);
+ display: none;
+}
