@@ -9,18 +9,14 @@ nav #main_title{
     font-size: 28px;
 }
 
+label {display:block; width:x; height:y; text-align:left;}
 main{
     background-color: #F5F5F5;
     text-align: center;
-    padding: 0px 30px;
 }
 
 main p{
     text-align: left;
-}
-
-main .chat-box{
-    padding: 20px;
 }
 
 footer{
@@ -34,26 +30,3 @@ footer .container{
     text-align: center;
     text-emphasis: bold;
 }
-
-#chat-msg-list{
-    background-color: #d9d9d9;
-}
-
-#left{
-    padding: 5px 10px;
-    margin: 7px;
-    background-color: #DA7F13;
-    width: 30%;
-    border-radius:  3px;
-}
-
-#right{
-    padding: 5px 10px;
-    margin: 7px;
-    background-color: #F4B365;
-    text-align: right;
-    width: 30%;
-    float: right;
-    border-radius:  3px;
-}
-

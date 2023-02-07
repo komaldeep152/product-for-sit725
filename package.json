@@ -1,27 +1,36 @@
 {
-  "name": "project-for-sit725",
+  "name": "group_project",
   "version": "1.0.0",
-  "description": "project-for-sit725",
-  "main": "script.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --recursive --exit"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/komaldeep152/product-for-sit725.git"
+    "url": "git+https://github.com/komaldeep152/project-for-sit725"
   },
-  "keywords": [
-    "Express",
-    "Node"
-  ],
-  "author": "komal",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/komaldeep152/product-for-sit725/issues"
+    "url": "https://github.com/komaldeep152/project-for-sit725/issues"
   },
-  "homepage": "https://github.com/komaldeep152/product-for-sit725#readme",
+  "homepage": "https://github.com/komaldeep152/project-for-sit725#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
+    "chai": "^4.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "socket.io": "^4.5.4"
+    "http-post": "^0.1.1",
+    "http-proxy": "^1.18.1",
+    "jquery": "^3.6.1",
+    "mocha": "^10.2.0",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.9.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.5.4",
+    "socket.io-client": "^4.5.4"
   }
 }

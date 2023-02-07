@@ -23,13 +23,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <div>
+            <!-- <div>
                 <img src="images/logo.jpg" width="78" height="65" >
             </div>
-            <a class="navbar-brand" href="#" id="main_title"> &nbsp; The Express Post</a>
+            <a class="navbar-brand" href="mainpage.html" id="main_title"> &nbsp; The Express Post</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="post logog" width="75" height="50"></a> 
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+                 <span class="navbar-toggler-icon"></span> 
             </button>
             <div class="collapse navbar-collapse d-lg-flex flex-lg-row-reverse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -37,16 +41,13 @@
                         <a class="nav-link active" aria-current="page" href="mainpage.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tracker.html">Locate a Parcel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Log Out</a>
+                        <a class="nav-link" href="login.html">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -76,5 +77,9 @@
             <span> Copyright &copy; The Post Express</span>
         </div>
     </footer>
+    <!-- Socket.io Library -->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="js/socket.js"></script>
 </body>
+
 </html>
