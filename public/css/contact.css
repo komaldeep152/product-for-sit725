@@ -1,0 +1,32 @@
+nav {
+    background-color: #2F303A; 
+    height: 100px;
+}
+
+nav #main_title{
+    color: #EC8F21; 
+    font-family: IM FELL Great Primer SC;
+    font-size: 28px;
+}
+
+label {display:block; width:x; height:y; text-align:left;}
+main{
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+main p{
+    text-align: left;
+}
+
+footer{
+    background-color: #2F303A; 
+    height: 100px;
+}
+
+footer .container{
+    padding: 15px;
+    color: #EC8F21;
+    text-align: center;
+    text-emphasis: bold;
+}
