@@ -1,0 +1,29 @@
+{
+  "name": "sit725-02",
+  "version": "1.0.0",
+  "description": "SIT725 Proj",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gneiazmah/SIT725-02.git"
+  },
+  "keywords": [
+    "Express",
+    "Node"
+  ],
+  "author": "Azmah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gneiazmah/SIT725-02/issues"
+  },
+  "homepage": "https://github.com/gneiazmah/SIT725-02#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1"
+  }
+}
