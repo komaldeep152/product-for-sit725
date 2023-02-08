@@ -38,7 +38,7 @@ To start the express server, run the following
 npm run start:dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and take a look around.
+Open [http://localhost:8080](http://localhost:8080) and take a look around.
 
 
 ## Use Docker
@@ -53,11 +53,12 @@ git clone https://github.com/komaldeep152/project-for-sit725
 Step 2: Build the Docker image
 
 ```bash
-docker build -t the-post-express.nodejs .
+docker build . -f Dockerfile.txt -t theexpresspost/grppro .
 ```
 
 Step 3: Run the Docker container locally:
 
 ```bash
-docker run -p 3000:3000 -d the-post-express.nodejs
+docker run -d -p 4125:8080 theexpresspost/grppro
 ```
+Now, you can got to the browser and open "http://localhost:4125/"
