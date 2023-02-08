@@ -7,13 +7,13 @@ const login_val = (req, res, dbo) => {
     dbo.findOne({$or: [{'email_address': username}, {'username': username}]}, function(err, result) {
       if (err) throw err;
       if (result == null){
-                res.send('<script>alert("The username/email is not found. Please try again")</script> <meta http-equiv="refresh" content="1; URL=login.html"/>');
+                res.send('<script>alert("The username/email is not found. Please try again")</script> <meta http-equiv="refresh" content="1; URL=index.html"/>');
       }
       else{
         dbo.findOne({"password":password}, function(err2, result2) {
             if (err2) throw err2;
             if (result2 == null){
-                res.send('<script>alert("The password didnot match. Please try again")</script> <meta http-equiv="refresh" content="1; URL=login.html"/>');
+                res.send('<script>alert("The password didnot match. Please try again")</script> <meta http-equiv="refresh" content="1; URL=index.html"/>');
             }
             else{
               try {

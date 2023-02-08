@@ -16,7 +16,6 @@ var bodyParser = require('body-parser');
 
 let http = require('http').createServer(app);
 let io = require("socket.io")(http);
-
 app.use(express.static(__dirname+'/public'))
 app.use(express.json());
 app.use(express.urlencoded({extends: false}));
@@ -28,7 +27,7 @@ app.use('/payment', payment_routes)
 app.use('/mainpage', order_routes)
 
 
-var port = process.env.port || 3000;
+var port = process.env.port || 8080;
 
 // socket test 
 io.on('connection', (socket) => {
@@ -69,6 +68,8 @@ app.get('/pricecalc/:pweight', function (req, res) {
         res.json({ result: result, statusCode: 200 }).status(200);
     }
 })
+
+app
 
 http.listen(port, () =>{
     console.log("Listening on port: " + port)
